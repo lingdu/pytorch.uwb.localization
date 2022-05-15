@@ -16,8 +16,17 @@ Since the original code is based on Tensorflow, now I have ported the original a
 - [x] Autosave the best model
 
 ## Environments
-
-Please refer to `requirements.txt`
+### （1）install anaconda3 or miniconda
+```conda create -n env_name python=3.6
+   conda activate env_name
+```
+### （2）install pytorch
+```conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
+```
+### （3）install other libs
+Please refer to `requirements.txt` to install other libs
+```conda install matplotlib==3.1.3
+```
 
 ## Descriptions
 
