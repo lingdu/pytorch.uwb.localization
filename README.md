@@ -21,14 +21,19 @@ Since the original code is based on Tensorflow, now I have ported the original a
 conda create -n env_name python=3.6
 conda activate env_name
 ```
-### （2）install pytorch
+### （2）install pytorch， because ubuntu20.04's support version need CUDA >=11.0 and cudatoolkit >= 11.0, so the pytorch's mini is cudatoolkit=11.0 and pytorch==1.7.0
 ```bash
-conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
+conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=11.0 -c pytorch
 ```
 ### （3）install other libs
 Please refer to `requirements.txt` to install other libs
 ```bash
 conda install matplotlib==3.1.3
+```
+
+### （4）For instance Training
+```bash
+python3 main.py --arch LSTM --gpu 0 -b 1000
 ```
 
 ## Descriptions
