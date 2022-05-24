@@ -9,7 +9,7 @@ Since the original code is based on Tensorflow, now I have ported the original a
 
 ## ToDo
 - [ ] Port RONet
-- [ ] Port Bi-LSTM
+- [x] Port Bi-LSTM
 - [ ] Run on test data
 - [x] Set training pipeline
 - [x] Visualize training procedure
@@ -95,7 +95,7 @@ On validation data
 |-----------|:----------:|
 | RNN       |    4.050   |
 | GRU       |    3.918   |
-| LSTM      | 4.855 (what's wrong with you..?) |
+| LSTM      |    4.855   |
 | Bi-LSTM   |     TBA    |
 | RONet     |     TBA    |
 
